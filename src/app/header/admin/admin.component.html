@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card" style="">
+
+      <div class="card-body">
+        <div>
+          <span>Name:</span>
+          <input type="text" placeholder="name" [(ngModel)]="name">
+        </div>
+        <div>
+          <span>Gender:</span>
+          <select class="form-select" name="gender" [(ngModel)]="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div>
+          <span>SubTypes</span>
+          <select class="form-select" [(ngModel)]="Subtype">
+            <option select>Open this select menu</option>
+            <option value="monthly">Monthly</option>
+            <option value="Quertly">Quertly</option>
+            <option value="Yearly">Yealy</option>
+          </select>
+
+        </div>
+        <div>
+          <span>Status</span>
+          <select class="form-select" name="active" [(ngModel)]="status">
+            <option select>Open this select menu</option>
+            <option value="active">Active</option>
+            <option value="Inactive">Inactive</option>
+
+          </select>
+        </div>
+
+      </div>
+
+      <button class="btn btn-primary" (click)="createNewUsers()">AddUser</button>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <app-user-list></app-user-list>
+    <app-user-details></app-user-details>
+  </div>
+</div>

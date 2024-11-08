@@ -1,0 +1,14 @@
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    justify-content: space-evenly;
+}
+.Text-content{
+padding: 30px auto;
+
+}
+.nav-text{
+padding: 20px;
+}

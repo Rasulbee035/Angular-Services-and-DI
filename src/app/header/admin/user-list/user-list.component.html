@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="p-1 text-center bg-body-tertiary">
+            <h4 class="mb-3">New User Details</h4>
+           
+          </div>
+    </header>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Subtype</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.name}}</td>
+                <td>{{user.gender}}</td>
+                <td>{{user.subType}}</td>
+                <td>{{user.status}}</td>
+                <td><button (click)="showUserDetails(user)">+</button></td>
+            </tr>
+    
+        </tbody>
+    </table>
+</body>
+</html>
